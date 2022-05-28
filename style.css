@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* flex menu area  start*/
+.header {
+ 
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+    
+    
+}
+.header-menu {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+.logo {
+  
+    width:20%;
+}
+.logo img{
+    height: 50px;
+}
+.menu{
+    width: 60%;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  
+} 
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    top: 131%;
+    left: -15%;
+    bottom: 0;
+    width:134%;
+    height: 1px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.menu ul li a:hover::after {
+    width: 0%;
+}
+/* menu area  start end*/
+
+
+/* flex start */
+.left-side{
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+   
+}
+.container {
+    padding-top: 200px;
+    width: 75%;
+    margin-left: 52px;
+}
+            /* Right sidebar */
+.right-side-bar{
+    width: 20%;
+    height: 772px;
+    border-left: 2px solid red;
+    margin-top: 3%;
+    padding: 37px 46px;
+    background-color: #d2d2d2;
+    margin-bottom: 30px;
+}
+.right-side-bar h2 {
+    padding-bottom: 15px;
+}
+.image img{
+    height:194px;
+}
+.paragraph {
+    width: 106%;
+}
+/* item-style */
+.item-one,.item-tow,.item-three{
+    background-color:red;
+    color:white;
+    border: 1px solid green;
+    padding:10px;
+
+}
+/* container-top-style */
+.sidebar-1{
+    display: flex;
+    
+}
+.sidebar-1 .left-div-1{
+    border: 1px solid green;
+    width: 443px;
+    height: 250px;
+    margin-top: -2%;
+    margin-left: 25px;
+
+}
+.sidebar-1 .left-div-1 p{
+background-color: red;
+color: #fff;
+padding: 25px 0;
+width: 70px;
+text-align: center;
+margin-bottom: 0;
+}
+.left-div-1.tow{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.left-div-1.three{
+display: flex;
+justify-content: end;
+align-items: end;
+}
+
+/* container middle-area */
+.container-tow{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    justify-content: space-around;
+}
+.content-1 {
+  width: 25%;
+  border: 1px solid green;
+  padding: 1.3rem;
+  box-sizing: border-box;
+}
+.content-2 {
+  width: 40%;
+  border: 1px solid green;
+  padding: 1.3rem;
+}
+.content-3{
+    width: 25%;
+    border: 1px solid green;
+    padding: 20px;
+}
+/* container-bottom area */
+.container-3{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+   justify-content: space-around;
+}
+.flex-left {
+  width: 30%;
+  /* height: 20vh; */
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 15px;
+}
+.flex-center {
+  width: 30%;
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+  
+}
+.flex-right {
+  width: 30%;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.flex-btn-1{
+    align-self: flex-start;
+    display: flex;
+}
+.flex-btn-2{
+    align-self:center;
+    display: flex;
+}
+.flex-btn-3{
+    align-self: flex-end;
+    display: flex;
+}
+         /* Footer */
+   
+.bottom{
+    background-color: #000;
+    margin-bottom: 10px;
+}
+.footer{
+    padding: 20px;
+}
+.footer ul{ 
+    display: flex;
+    justify-content:center;
+}
+.footer ul li{
+    margin-left: 38px;
+    position: relative;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    /* position: relative; */
+}
+
+.footer-menu ul li::after {
+    content: "";
+    position: absolute;
+    top: 131%;
+    left: -15%;
+    bottom: 0;
+    width:134%;
+    height: 1px;
+    background-color: #fff;
+    transition: .5s;
+    
+}
+.footer-menu ul li:hover::after {
+    width: 0%;
+}
